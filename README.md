@@ -1,12 +1,108 @@
-# React + Vite
+# Tarefador - Aplicação de Gerenciamento de Tarefas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Uma aplicação React moderna para gerenciamento de tarefas com checklist interativo de qualidade de software baseado na norma ISO/IEC 9126.
 
-Currently, two official plugins are available:
+## 📋 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tarefador é uma aplicação de lista de tarefas (to-do list) desenvolvida com React e Vite, que inclui:
 
-## Expanding the ESLint configuration
+- **Gerenciamento de Tarefas**: Adicionar, marcar como concluída e excluir tarefas
+- **Persistência de Dados**: Armazenamento local usando localStorage
+- **Checklist de Qualidade**: Avaliação interativa baseada na ISO/IEC 9126
+- **Interface Responsiva**: Design adaptável para diferentes dispositivos
+- **CSS Modules**: Estilização com escopo local
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Tecnologias Utilizadas
+
+- **React 19** - Biblioteca para interfaces de usuário
+- **Vite** - Build tool e servidor de desenvolvimento
+- **CSS Modules** - Estilização com escopo local
+- **ESLint** - Linting de código
+- **LocalStorage** - Persistência de dados no navegador
+
+## 📦 Estrutura do Projeto
+
+```
+src/
+├── components/
+│   ├── TaskItem.jsx           # Componente de item de tarefa
+│   ├── TaskItem.module.css    # Estilos do TaskItem
+│   ├── QualityCheckItem.jsx   # Componente de item de qualidade
+│   └── QualityCheckItem.module.css # Estilos do QualityCheckItem
+├── data/
+│   └── initialQualityChecks.ts # Dados iniciais do checklist
+├── App.jsx                    # Componente principal
+├── App.module.css            # Estilos principais
+├── main.jsx                  # Ponto de entrada
+└── index.css                 # Estilos globais
+```
+
+## 🛠️ Instalação e Execução
+
+### Pré-requisitos
+
+- Node.js (versão 16 ou superior)
+- npm ou yarn
+
+### Passos para execução
+
+1. **Clone o repositório**
+   ```bash
+   git clone https://github.com/luanhmilano/to-do_9126.git
+   cd to-do_9126
+   ```
+
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
+
+3. **Execute o projeto em modo de desenvolvimento**
+   ```bash
+   npm run dev
+   ```
+
+4. **Acesse a aplicação**
+   - Abra o navegador em `http://localhost:5173`
+
+### Scripts Disponíveis
+
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Gera build de produção
+- `npm run preview` - Visualiza o build de produção
+- `npm run lint` - Executa o linting do código
+
+## 🎯 Funcionalidades
+
+### Gerenciamento de Tarefas
+- ✅ Adicionar novas tarefas
+- ✅ Marcar tarefas como concluídas
+- ✅ Excluir tarefas
+- ✅ Ordenação automática (pendentes primeiro)
+- ✅ Persistência no localStorage
+
+### Checklist de Qualidade ISO/IEC 9126
+- ✅ Funcionalidade
+- ✅ Confiabilidade
+- ✅ Usabilidade
+- ✅ Eficiência
+- ✅ Manutenibilidade
+- ✅ Portabilidade
+
+## 🎨 Características de Design
+
+- **Responsivo**: Adaptável a diferentes tamanhos de tela
+- **Acessível**: Labels e ARIA attributes para acessibilidade
+- **Animações**: Transições suaves e animações de entrada
+- **Tema Moderno**: Design limpo e profissional
+
+## 📱 Compatibilidade
+
+- ✅ Chrome/Edge (versões recentes)
+- ✅ Firefox (versões recentes)
+- ✅ Safari (versões recentes)
+- ✅ Dispositivos móveis
+
+
+
+---
